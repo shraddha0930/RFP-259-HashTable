@@ -20,10 +20,13 @@ public class BinaryMain {
         System.out.println("The height of the BST is : " + binary.calculateHeight(binary.root));
 
         //Checking if all values are present in BST
-        boolean[] flag = new boolean[binary.Value.length];
-        for (int i = 0; i < binary.Value.length; i++) {
-            flag[i] = binary.ifNodeExists(binary.root, binary.Value[i]);
-            System.out.println(binary.Value[i] + " is present |  " + flag[i]);
-        }
+//        boolean[] flag = new boolean[binary.Value.length];
+//        for (int i = 0; i < binary.Value.length; i++) {
+//            flag[i] = binary.ifNodeExists(binary.root, binary.Value[i]);
+//            System.out.println(binary.Value[i] + " is present |  " + flag[i]);
+//        }
+        //Checking if 63 is present in BST
+        boolean flag = binary.ifNodeExists(binary.root,63);
+        System.out.println("The value 63 is present in the BST : "+flag);
     }
 }
