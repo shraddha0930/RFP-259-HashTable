@@ -1,12 +1,12 @@
 public interface INode<T> {
 
-	public T getKey();
+	 T getKey();
 	
-	public void setKey(T key);
+	 void setKey(T key);
 	
-	public INode<T> getNext();
+	 INode<T> getNext();
 	
-	public void setNext(INode<T> next);
+	 void setNext(INode<T> next);
 	
 	
 	
