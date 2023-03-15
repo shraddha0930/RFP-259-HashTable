@@ -55,10 +55,10 @@ public class HashTable<K,V> {
 
         }
     }
-    public void delete(K string) {
+    public void remove(K string) {
         int indexValue = getIndex(string);
         MyLinkedList<K> myLinkedList1 = myBucketArray.get(indexValue);
-        myLinkedList1.deletion(string);
+        myLinkedList1.remove(string);
     }
 
     @Override
