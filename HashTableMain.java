@@ -3,8 +3,7 @@ public class HashTableMain {
 
     public static void main(String[] args) {
         HashTable<String, Integer> hashTable = new HashTable<>(10);
-        String paragraph = "To be or not to be";
-        String[] array = paragraph.split(" ");
+        String paragraph = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";        String[] array = paragraph.split(" ");
         for (String str:array) {
             Integer frequencyValue = hashTable.findFrequency(str);
             if (frequencyValue==null){
