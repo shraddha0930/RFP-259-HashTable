@@ -27,6 +27,24 @@ public class MyLinkedList<K> {
         }
         return null;
     }
+    public Boolean remove(K deleteData){
+        INode<K> deleteNode=search(deleteData);
+        INode<K> temp = head;
+        while (temp!=null) {
+            if (temp == deleteNode){
+                head = deleteNode.getNext();
+                break;
+            }
+            else if (temp.getNext() == deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+    }
+
 
     @Override
     public String toString() {
