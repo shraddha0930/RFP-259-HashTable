@@ -14,6 +14,14 @@ public class HashTableMain {
             hashTable.add(str,frequencyValue);
         }
         System.out.println(hashTable);
+        String string1 = "avoidable";
+        for (String string:array) {
+            if(string.equals(string1)){
+                hashTable.remove(string);
+                System.out.println(hashTable);
+            }
+
+        }
 
     }
 }
